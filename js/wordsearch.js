@@ -23,8 +23,8 @@
     this.solved = 0;
     // array-palabras
     // 'becarios', 'pdt', 'pae', 'bilinguismo','masterkids'
-    let palabrasDef = ['becarios', 'pdt'];
-    let wordsearch = 12;
+    let palabrasDef = ['dad', 'mom', 'baby', 'boy','girl'];
+    let wordsearch = 6;
     // Default settings
     var default_settings = {
       'directions': ['W', 'N', 'WN', 'EN'],
