@@ -11,6 +11,10 @@ h1 {
 
 body {
   color: #333;
+  background-image: url('../images/fondo.png');
+  font-size: 1rem;
+  height: 100vh;
+  display: flex;
 }
 
 /* Common */
@@ -29,7 +33,7 @@ body {
 
 .wrap {
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
   padding: 40px 0;
   text-align: center;
   position:relative;

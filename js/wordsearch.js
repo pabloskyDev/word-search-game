@@ -21,12 +21,15 @@
 
     //Words solved.
     this.solved = 0;
-
+    // array-palabras
+    let beach = ['playa', 'ola', 'mar', 'arena'];
+    let wordsearch = 10;
     // Default settings
     var default_settings = {
       'directions': ['W', 'N', 'WN', 'EN'],
-      'gridSize': 10,
-      'words': ['one', 'two', 'three', 'four', 'five'],
+      'gridSize': wordsearch,
+      // 'words': ['one', 'two', 'three', 'four', 'five'],
+      'words': beach,
 	  'wordsList' : [],
       'debug': false
     }

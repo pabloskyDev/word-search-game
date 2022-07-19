@@ -20,11 +20,12 @@
 }
 
 .ws-col.ws-selected {
-  background: #eee;
+  background: #32719167;
 }
 
 .ws-found {
-  background: yellow;
+  background: #32719167;
+  box-shadow: rgba(53, 127, 163, 0.46) 0px 22px 95px 2px;
 }
 
 .ws-game-over-outer {
