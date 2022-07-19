@@ -22,14 +22,15 @@
     //Words solved.
     this.solved = 0;
     // array-palabras
-    let beach = ['playa', 'ola', 'mar', 'arena'];
-    let wordsearch = 10;
+    // 'becarios', 'pdt', 'pae', 'bilinguismo','masterkids'
+    let palabrasDef = ['becarios', 'pdt'];
+    let wordsearch = 12;
     // Default settings
     var default_settings = {
       'directions': ['W', 'N', 'WN', 'EN'],
       'gridSize': wordsearch,
       // 'words': ['one', 'two', 'three', 'four', 'five'],
-      'words': beach,
+      'words': palabrasDef,
 	  'wordsList' : [],
       'debug': false
     }
@@ -374,12 +375,13 @@
 
     //Create overlay content.
     var overlay = document.getElementById("ws-game-over-outer");
-      overlay.innerHTML = "<div class='ws-game-over-inner' id='ws-game-over-inner'>"+
-                            "<div class='ws-game-over' id='ws-game-over'>"+
-                              "<h2>Congratulations!</h2>"+
-                              "<p>You've found all of the words!</p>"+
-                            "</div>"+
-                          "</div>";
+      overlay.innerHTML = ` <div class='ws-game-over-inner' id='ws-game-over-inner'>` +
+                            ` <div class='ws-game-over' id='ws-game-over'>` +
+                              ` <h2>¡Felicitaciones!</h2>` +
+                              ` <p>Encontraste todas las palabras de la sopa de letras</p>` +
+                              ` <button type="button" onclick="recargar();">Repetir</button>` +
+                            ` </div>` +
+                          ` </div>` ;
   }
 
   /**
@@ -431,6 +433,10 @@
   }
 
 })();
+
+function recargar(){
+  location.reload();
+}
 //-----------------------------Remove accent for latin/hebrew letters---------------------------------------------------//
 var defaultDiacriticsRemovalMap = [{
     'base': "A",
