@@ -13,7 +13,7 @@
    * @param {Array} settings
    * constructor
    */
-  function WordSearch(wrapEl, settings) {
+  function WordSearch(wrapEl, settings, wordsearch = 6) {
     this.wrapEl = wrapEl;
 
     // Add `.ws-area` to wrap element
@@ -24,7 +24,6 @@
     // array-palabras
     // 'becarios', 'pdt', 'pae', 'bilinguismo','masterkids'
     let palabrasDef = ['dad', 'mom', 'baby', 'boy','girl'];
-    let wordsearch = 6;
     // Default settings
     var default_settings = {
       'directions': ['W', 'N', 'WN', 'EN'],
@@ -65,6 +64,8 @@
    */
   WordSearch.prototype.parseWords = function(maxSize) {
     var itWorked = true;
+
+    console.log(this.settings.words);
 
     for (var i = 0; i < this.settings.words.length; i++) {
       // Convert all the letters to upper case      
@@ -436,6 +437,30 @@
 
 function recargar(){
   location.reload();
+}
+
+function Nivel(idNivel) {
+  let wordsearch = 6;
+  switch (idNivel) {
+    case 'facil':
+      wordsearch = 7;
+      console.log('Funciones orientadas al modo fácil');
+      break;
+    case 'medio':
+      console.log('Funciones orientadas al modo medio');
+      break;  
+    case 'dificil':
+      console.log('Funciones orientadas al modo dificil');
+      break;
+    case 'avanzado':
+      console.log('Funciones orientadas al modo avanzado');
+      break;
+    default:
+      console.log('No ha seleccionado el nivel adecuado');
+      break;
+  }
+
+
 }
 //-----------------------------Remove accent for latin/hebrew letters---------------------------------------------------//
 var defaultDiacriticsRemovalMap = [{

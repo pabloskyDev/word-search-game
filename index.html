@@ -9,13 +9,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="wrap">
-      <h1 class="logo">Preescolar. Módulo 1 (1). Lección 1</h1>
-      <h2 class="logo">Entorno. Gente</h2>
-      <section id="ws-area"></section>
-      <ul class="ws-words"></ul>
-    </div>
+    <main class="container wrap">
+      <section>
+        <h3>Niveles</h3>
+        <form>
+          <label for="facil"><input type="radio" name="nivel" id="facil" onclick="Nivel(this.id)"> Fácil</label>
+          <label for="medio"><input type="radio" name="nivel" id="medio" onclick="Nivel(this.id)"> Medio</label>
+          <label for="dificil"><input type="radio" name="nivel" id="dificil" onclick="Nivel(this.id)"> Difícil</label>
+          <label for="avanzado"><input type="radio" name="nivel" id="avanzado" onclick="Nivel(this.id)"> Avanzado</label>
+        </form>
+      </section>
+      <article>
+        <h1 class="logo">Preescolar. Módulo 1 (1). Lección 1</h1>
+        <h2 class="logo">Entorno. Gente</h2>
+        <div id="ws-area"></div>
+      </article>
+      <section>
+        <ul class="ws-words"></ul>
+      </section>
+    </main>
+
     <!-- <a href="https://github.com/lizhineng/word-search-game"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/forkme_right_red.png" alt="Fork me on GitHub"></a> -->
+    
     <!-- <script src="js/utility.min.js"></script> -->
     <script src="js/utility.js"></script>
     <!-- <script src="js/wordsearch.min.js"></script> -->
