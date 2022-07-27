@@ -11,7 +11,9 @@ h1, h2 {
 
 body {
   color: #333;
-  background-image: url('../images/fondo.png');
+  background-image: url('../images/bg-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 1rem;
   height: 100vh;
   display: flex;

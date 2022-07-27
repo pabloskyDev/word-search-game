@@ -1,7 +1,8 @@
 /* Wordsearch */
 
 .ws-area {
-  background: #fafafa;
+  /* background: #fafafa; */
+  background: #5dc3f5;
   display: inline-block;
   padding: 20px;
   border-radius: 10px;
@@ -20,12 +21,12 @@
 }
 
 .ws-col.ws-selected {
-  background: #8E806A;
+  background: #ceedfd;
 }
 
 .ws-found {
-  background: #8e806a;
-  box-shadow: rgba(142, 128, 106, 0.46) 0px 22px 95px 2px;
+  background: #ceedfd;
+  box-shadow: rgba(206, 237, 253, 0.46) 0px 22px 95px 2px;
 }
 
 .ws-game-over-outer {
